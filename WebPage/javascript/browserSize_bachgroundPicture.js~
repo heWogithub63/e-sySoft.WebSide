@@ -1,0 +1,16 @@
+// javascript:Browser find size and create background
+function browserSize_backgroundPicture() {
+   var innerHight, innerWight
+   if(navigator.appName == "Microsoft Internet Explorer") {
+     document.getElementById("1").background = "../img/e@sySoft2.png";
+     innerHeight = document.innerHight;
+     innerWight  = document.innerWight;
+   }
+   else {
+      document.getElementById("1").background = "../img/e@sySoft2.png";
+      innerHeight = document.innerHight;
+      innerWight  = document.innerWight;
+   }
+
+   alert("Breite:  " + innerWight + "Höhe: " + innerHight);
+}

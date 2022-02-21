@@ -1,0 +1,14 @@
+<html>
+<head>
+<meta>
+<title>
+e@sySoft_Start1
+</title>
+<script language="JavaScript" src="../javascript/backgroundFrameMiddle.js" type="text/javascript"></script>
+<script language="JavaScript" src="../javascript/easySoftDrawer.js" type="text/javascript"></script>
+</head>
+<body id="1" onload="javascript: backgroundFrameMiddle(0)">
+<a  href="javascript: easySoftDrawer(0)" onClick="parent.rightFrame.location.href='rightFrame_Start.html'">
+<img name="easySoftDrawerBord">
+</body>
+</html>

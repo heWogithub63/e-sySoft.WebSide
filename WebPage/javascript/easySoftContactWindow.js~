@@ -1,0 +1,20 @@
+// javascript:picture open Contoct Window
+function easySoftContactWindow() {
+
+	  var ContactWindow;
+	  var winHeight, winWidth, PosX, PosY;
+	  var winWQuo, winHQuo;
+
+	winWQuo = parent.middleFrame.innerWidth / 1280;
+	winHQuo = parent.middleFrame.innerHeight / 900;
+
+	winWidth = 560 * winWQuo;
+	winHeight = 400 * winHQuo;
+	
+	PosX = 660 * winWQuo;
+     	PosY = 62 * winHQuo;
+
+	  ContactWindow = window.open("", "", "width=" + winWidth + ", height=" + winHeight);
+	  ContactWindow.moveTo(PosX, PosY);
+	  
+}

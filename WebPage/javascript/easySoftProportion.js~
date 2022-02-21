@@ -1,0 +1,57 @@
+	var quotientX, quotientY;
+	var frameSideWidth, frameMiddleWidth, frameSideHeight, frameMiddleHeight;
+
+
+function easySoftProportion() {
+
+	var windowWidth, windowHeight, imgWidth, imgHeight;
+	var backgroundPic = new Image(1280, 900);
+
+	backgroundPic.src = "../img/e@sySoft.png"
+        imgWidth = backgroundPic.width;
+	imgHeight = backgroundPic.height;
+
+	windowWidth = window.innerWidth;
+	windowHeight = window.innerHeight;
+        
+	quotientX = (windowWidth -100) / imgWidth;
+	quotientY = (windowHeight -50) / imgHeight;
+
+	if(quotientX > 1 && quotientY <= 1) {
+           imgWidth = imgWidth * quotientY;
+	   frameMiddleWidth = imgWidth * quotientX;
+	   frameSideWidth = (windowWidth - frameMiddleWidth) / 2;
+	   frameMiddleHeight = imgHeight * quotientY;
+           frameSideHeight = frameMiddleHeight;	
+	}
+	else if(quotientX <= 1 && quotientY > 1) {
+	   imgHeight = imgHeight * quotientX;
+           frameMiddleHeight = imgHeight;
+	   frameSideHeigh = (windowHeight - imgHeight)
+	   frameMiddleWidth = imgWidth * quotientX;
+	   frameSideWidth = (windowWidth - imgWidth) / 2;
+	}
+	
+	
+	document.getElementById("frameLeft").width = frameSideWidth;
+	document.getElementById("frameLeft").height = frameSideHeight;
+	document.getElementById("frameLeft").src="leftFrame_Start.html";
+	
+	//document.getElementById("topMiddle").width = frameMiddleWidth;
+	//document.getElementById("topMiddle").height = frameMiddleHeight;
+	
+	document.getElementById("frameMiddle").width = frameMiddleWidth;
+	document.getElementById("frameMiddle").height = frameMiddleHeight;
+	document.getElementById("frameMiddle").src="backgroundFrameMidd.html";
+
+
+	document.getElementById("frameRight").width = frameSideWidth;
+	document.getElementById("frameRight").height = frameSideHeight;
+	document.getElementById("frameRight").src="leftFrame_Start.html";
+	
+	//location.href="../html/e@sySoft_StartIndex.html";
+	
+/*alert("imgWidth: " + imgWidth + " imgHeight: " + imgHeight + "\nwindowWeight: " + windowWidth + " windowHeigth: " + windowHeight +
+	"\nquotientX: " + quotientX + " quotientY: " + quotientY + "\nframeSideWidth: " + frameSideWidth + " frameMiddleWidth: " +
+        frameMiddleWidth + "\nframeSideHeight: " + frameSideHeight + " frameMiddleHeight: " + frameMiddleHeight);*/
+}

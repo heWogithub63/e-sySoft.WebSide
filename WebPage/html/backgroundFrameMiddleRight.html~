@@ -1,0 +1,15 @@
+<html>
+<head>
+<meta>
+<title>
+backgroundFrameMiddleRight
+</title>
+<script language="JavaScript" src="../javascript/proportionCalculation.js" type="text/javascript"></script>
+<script language="JavaScript" src="../javascript/backgroundFrame.js" type="text/javascript"></script>
+<script language="JavaScript" src="../javascript/easySoftDrawer.js" type="text/javascript"></script>
+</head>
+<body id="4" onload="javascript: backgroundFrame(4)">
+<a>
+<img name="easySoftProjScreen">
+</body>
+</html>

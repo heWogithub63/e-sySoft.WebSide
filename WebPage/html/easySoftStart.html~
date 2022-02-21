@@ -1,0 +1,17 @@
+<html>
+<head>
+<meta>
+<title>
+e@sySofStart
+</title>
+<script language="JavaScript" src="../javascript/easySoftProportion.js" type="text/javascript"></script>
+</head>
+<body onload="javascript: easySoftProportion()">
+<table border="1"><tr>
+<td id="topLeft"><iframe id="frameLeft" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" noresize></iframe></td>
+<td id="topMiddle"><iframe id="frameMiddle" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" noresize></iframe></td>
+<td id="topRight"><iframe id="frameRight" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" noresize></iframe></td>
+</tr>
+</table>
+</body>
+</html>

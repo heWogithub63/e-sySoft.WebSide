@@ -1,0 +1,11 @@
+<html>
+<head>
+<meta>
+<title>
+backgroundFrameTop1
+</title>
+<script language="JavaScript" src="../javascript/backgroundFrame.js" type="text/javascript"></script>
+</head>
+<body id="1" onload="javascript: backgroundFrame(1)">
+</body>
+</html>

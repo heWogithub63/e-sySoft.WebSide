@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta>
+<title>
+projectionVideo
+</title>
+<script language="JavaScript" src="../javascript/proportionCalculation.js" type="text/javascript"></script>
+<script language="JavaScript" src="../javascript/menueChange.js" type="text/javascript"></script>
+<script language="JavaScript" src="../javascript/backgroundPictureDiscipline.js" type="text/javascript"></script>
+<script language="JavaScript" src="../javascript/easySoftDrawer.js" type="text/javascript"></script>
+<script language="JavaScript" src="../javascript/easySoftProjector.js" type="text/javascript"></script>
+<script language="JavaScript" src="../javascript/easySoftProjectorContact.js" type="text/javascript"></script>
+</head>
+<body bgcolor="#d4d2d2" onload="javascript: easySoftProjectorContact('Vid0', 'png')">
+<img id="Vid0">
+<table border="0">
+<tr>
+     <td id="1" align="center" valign="middle">
+     <img id="Vid1" alt="" border="0" name="Header">
+</tr>
+<tr>
+     <td id="2" align="center" valign="middle">
+     <a  href="javascript: easySoftProjector(1)";
+         onmouseover="javascript: menueChange('Vid', '02_1')" onmouseout="javascript: menueChange('Vid', '02')">
+       <img id="vid2" alt="" border="0" name="MotherNatur">
+    </td>
+</tr>
+<tr>
+     <td id="3" align="center" valign="middle">
+     <a  href="javascript: easySoftProjector(2)"
+         onmouseover="javascript: menueChange('Vid', '03_1')" onmouseout="javascript: menueChange('Vid', '03')">
+       <img id="Vid3" alt="" border="0" name="MovieSequence">
+    </td>
+</tr>
+<tr>
+     <td id="4" align="center" valign="middle">
+     <a  href="javascript: easySoftProjector(3)"
+         onmouseover="javascript: menueChange('Vid', '04_1')" onmouseout="javascript: menueChange('Vid', '04')">
+       <img id="Vid4" alt="" border="0" name="RelaxPicture">
+    </td>
+</tr>
+<tr>
+     <td id="5" align="center" valign="middle">
+     <a  href="javascript: easySoftProjector(4)"
+         onmouseover="javascript: menueChange('Vid', '05_1')" onmouseout="javascript: menueChange('Vid', '05')">
+       <img id="Vid5" alt="" border="0" name="Mounten">
+    </td>
+</tr>
+</table>
+</body>
+</html>

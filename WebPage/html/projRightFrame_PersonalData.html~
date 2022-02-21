@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>projRightFramePersonalData</title>
+</head>
+<script language="JavaScript" src="../javascript/proportionCalculation.js" type="text/javascript"></script>
+<script language="JavaScript" src="../javascript/easySoftProjectorContact.js" type="text/javascript"></script>
+<body bgcolor="#d4d2d2" onload="javascript: easySoftProjectorContact('PersonalData', 'png')">
+<table border="0"><tr id="tab" border="0" valign="bottom" align="left"><img></tr></table>
+<img>
+</body>
+</html>
+

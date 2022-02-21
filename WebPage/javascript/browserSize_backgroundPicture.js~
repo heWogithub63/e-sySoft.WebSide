@@ -1,0 +1,36 @@
+// javascript:Browser find browser window size and create background
+function browserSize_backgroundPicture() {
+
+   var innerHeight, innerWight;
+   var imgHeight, imgWidth, screenQuote;
+   
+   if(navigator.appName == "Microsoft Internet Explorer") {
+
+     innerHeight = document.innerHeight;
+     innerWidth  = document.innerWidth;
+
+	imgWidth = 1281;
+	imgHeight = 898;
+   
+   }
+   else {
+
+      innerHeight = window.innerHeight;
+      innerWidth  = window.innerWidth;
+      imgWidth = 1281;
+      imgHeight = 898;
+     }
+      document.getElementById("easySoft").width = imgWidth;
+      document.getElementById("easySoft").height = innerHeight;
+      document.getElementById("easySoft").hspace = Math.abs(innerWidth - imgWidth) /2;
+
+      document.getElementById("easySoft").src = "../img/e@aySoft2.png";
+
+
+      document.getElementById("drawer").width = 375;
+      document.getElementById("drawer").height = 449;
+      document.getElementById("drawer").marginTop = 138;
+      document.getElementById("drawer").hspace = Math.abs(innerWidth - imgWidth) /2 +588;
+
+      document.getElementById("easySoft").src = "../img/programDrawer.png";	
+}

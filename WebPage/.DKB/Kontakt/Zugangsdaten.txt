@@ -1,0 +1,17 @@
+﻿DKB IBAN: DE26 1203 0000 1078 7711 00
+BIC: BYLADEM1001
+
+StartPasswort: 13872, 19915, 10910
+Anmeldename: www.dkb.de 1078771100_p
+
+DKB-TAn2Go-App
+Tang2go ID: 18443578245646521
+Registrierungscode: Ip6by-e33I7-7uku9-b2wjp-3gxvq
+Password: Glomerulo_01
+Freischaltcode: 095733
+
+InternetBanking:
+Passwort: Glomerulo#01
+
+DKB-VisaCard:
+PIN: 3221

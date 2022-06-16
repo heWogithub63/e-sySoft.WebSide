@@ -1,0 +1,152 @@
+// javascript:picture change easySoftProjector
+function easySoftProjectorContact(name, typ) {
+
+	  var bild1, bild2, bild3;
+	  var imgHeight, imgWidth, imgWidth1,PosX, PosY;
+	  var imgWQuo, imgHQuo;
+	  
+	  var device = sessionStorage.device;
+          var count = 7;
+          
+	imgWQuo = parent.frameMiddle.innerWidth /1280;
+	imgHQuo = parent.frameMiddle.innerHeight /860;
+
+        imgWidth = 340 * imgWQuo;
+	imgWidth1 = 80 * imgWQuo;
+	imgHeight = 412 * imgHQuo;
+	
+	if(name == "Lyr0") {
+             count = 7; 
+        }
+        if(name == "Werb0") {
+             count = 6; 
+        }     
+
+	
+	if(name == "Video") {
+	  
+	   
+	   parent.frameMiddleRight.document.getElementById("video").width = imgWidth;
+	   parent.frameMiddleRight.document.getElementById("video").height = imgHeight;
+
+	   imgWidth = parent.frameMiddleRight.document.getElementById("video1").width;
+	   document.getElementById("video1").height = imgHeight/0.86;
+	   document.getElementById("video1").width = imgHeight/1.14;
+	   
+	return;
+	}
+
+
+	     if(parent.frameMiddleRight.document.getElementById("video1") != null) { 
+		parent.frameMiddleRight.location.href="../html/backgroundFrameMiddleRight.html";
+        
+	        
+		   parent.rightFrame.location.href="rightFrame_Start.html";
+		
+	     }
+
+	  parent.frameTop2.location.href="backgroundFrameTop2.html";
+
+          bild1 = new Image(imgWidth, imgHeight);
+	  bild1.src = "../img/" + device + "/projectionWall" + name + "1." + typ;
+	  
+         if(parent.frameMiddleRight.document.images[0] != null) {
+	     parent.frameMiddleRight.document.images[0] = bild1;
+	     parent.frameMiddleRight.document.images[0].src = bild1.src;
+         }
+	 
+	  
+	if(name == "WorldTime" || name == "PersonalData") {
+	  
+          bild2 = new Image(imgWidth, imgHeight);;
+	  document.images[0] = bild2;
+	  bild2.src = "../img/" + device + "/projectionWall" + name + "2." + typ
+	  document.images[0].src = bild2.src;
+
+	}
+        
+        else {
+	  
+             bild2 = new Image(imgWidth, imgHeight);
+	     bild2.src = "../img/" + device + "/projectionWall" + name + "2." + typ;
+	 
+	     document.images[0] = bild2;
+	     document.images[0].src = bild2.src;
+	  
+	  for(var i=1; i<count; i++) 
+		if(document.images[i] != null) 
+	
+			document.images[i].src="../img/" + device + "/" + name.toString().substring(0,3) + "0" + i + ".png";
+		   
+	  if(name == "Med")
+		easySoftDrawer(1);
+	  else if(name == "Web")
+	       	easySoftDrawer(2);
+	  else if(name == "App")
+	       	easySoftDrawer(3);
+	  else if(name == "Video")
+	       	easySoftDrawer(4);
+
+
+	  if(device == "PersonalComputer")  {
+  	     document.getElementById(1).width="150";
+	     document.getElementById(1).height="45";
+		   
+                for(var i=2; i<count; i++) 
+		 if(document.getElementById(i) != null) {
+  	           document.getElementById(i).width="120";
+	           document.getElementById(i).height="40";
+	         }
+		
+	  }
+
+          else if(device == "Laptop") {
+  	           document.getElementById(1).width="140";
+	           document.getElementById(1).height="35";
+		   
+                for(var i=2; i<count; i++) 
+		 if(document.getElementById(i) != null) {
+  	           document.getElementById(i).width="110";
+	           document.getElementById(i).height="30";
+	         }
+		
+	  }
+
+	  else if(device == "Tablet") {
+  	     document.getElementById(1).width="90";
+	     document.getElementById(1).height="30";
+
+	     for(var i=2; i<count; i++) 
+		 if(document.getElementById(i) != null) {
+  	           document.getElementById(i).width="75";
+	           document.getElementById(i).height="25";
+	         }
+	    
+	  }
+
+	  else if(device == "Smartphone") {
+  	     document.getElementById(1).width="80";
+	     document.getElementById(1).height="18";
+		   
+                for(var i=2; i<count; i++) 
+		 if(document.getElementById(i) != null) {
+  	           document.getElementById(i).width="65";
+	           document.getElementById(i).height="14";
+	         }
+		
+	  }
+	
+	}
+	
+	
+	  if(device == "PersonalComputer")
+  	     document.images[0].vspace = 141;
+          else if(device == "Laptop")
+  	     document.images[0].vspace = 103;
+	  else if(device == "Tablet")
+  	     document.images[0].vspace = 65;
+	  else if(device == "Smartphone")
+  	     document.images[0].vspace = 34;
+	  
+
+}

@@ -1,0 +1,21 @@
+// javascript:Browser find browser window size and create background picture
+function backgroundFrameTop(i) {
+
+   var background;	
+   var innerHeight, innerWight;
+   var framePic = new Array();
+ 
+    
+     innerHeight = document.getElementById(i).innerHeight;
+     innerWidth  = document.getElementById(i).innerWidth;
+
+
+	framePic[0] = new Image(innerWidth, innerHeight);
+	framePic[0].src = "../img/frameTop1.png";
+	framePic[1] = new Image(innerWidth, innerHeight);
+	framePic[1].src = "../img/frameTop2.png";
+	framePic[2] = new Image(innerWidth, innerHeight);
+	framePic[2].src = "../img/frameTop3.png";
+
+	document.getElementById(i).background = framPic[i].src;
+}

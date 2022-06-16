@@ -4,11 +4,11 @@ function backgroundPictureKind(name, typ) {
    var background;	
    var innerHeight, innerWight;
    var device = sessionStorage.device;
-   var count = 7;
+   var count = 8;
       if(name == "Clips")
          count = 7;
       if(name == "Lyr")
-         count = 14;   
+         count = 7;   
 
       for(var i=1; i<count; i++) 
          if(document.getElementById(name+i) != null) 

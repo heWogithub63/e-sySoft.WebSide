@@ -1,0 +1,29 @@
+// javascript:picture open Contoct Window
+function easySoftContact(i) {
+
+       if(i == 1) {
+	  var ContactWindow = new Window();
+	  var winHeight, winWidth, PosX, PosY;
+	  var winWQuo, winHQuo;
+
+	winWQuo = parent.middleFrame.innerWidth / 1280;
+	winHQuo = parent.middleFrame.innerHeight / 900;
+
+	winWidth = 200 * imgWQuo;
+	winHeight = 400 * imgHQuo;
+	
+	PosX = 660 * imgHQuo;;
+     	PosY = 62 * imgHQuo;;
+
+	  ContactWindow.innerHight = winHeight;
+	  ContactWindow.innerWidzh = winWidth;
+	  ContactWindow.pageXOffset = PosX;
+	  ContactWindow.pageYOffset = PosY;
+
+	ContactWindow.open();
+
+      }
+
+      else
+	ContactWindow.close();	
+}

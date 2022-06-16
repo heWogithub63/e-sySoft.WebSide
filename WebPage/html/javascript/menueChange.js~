@@ -1,0 +1,11 @@
+// javascript:picture change menueText
+function menueChange(disciplin, numb) {
+	var number = new String(numb);
+	proportionCalculation(1);
+
+	number = number.substring(0,1);
+
+		if(document.getElementById(disciplin + number) != null) 
+			document.getElementById(disciplin + number).src="../img/" + device + "/" + disciplin + numb + ".png";
+
+}

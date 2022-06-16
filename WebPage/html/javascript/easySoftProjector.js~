@@ -1,0 +1,6 @@
+
+function easySoftProjector(i) {
+
+	parent.frameMiddle.location.href="../html/Video" + i + ".html";
+
+}

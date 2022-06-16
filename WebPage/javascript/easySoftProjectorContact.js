@@ -18,7 +18,9 @@ function easySoftProjectorContact(name, typ) {
 	if(name == "Lyr0") {
              count = 7; 
         }     
-
+        if(name == "Werb0") {
+             count = 6; 
+        }   
 	
 	if(name == "Video") {
 	  
@@ -82,6 +84,10 @@ function easySoftProjectorContact(name, typ) {
 	  else if(name == "App")
 	       	easySoftDrawer(3);
 	  else if(name == "Video")
+	       	easySoftDrawer(4);
+          else if(name == "Lyr0")
+	       	easySoftDrawer(4);
+          else if(name == "Werb0")
 	       	easySoftDrawer(4);
 
 

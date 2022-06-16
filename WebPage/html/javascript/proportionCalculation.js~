@@ -1,0 +1,57 @@
+//creating a presentation HomeSide of e@sySoft company
+
+var device = new String();
+
+function proportionCalculation(i) {
+	var iWidth, iHeight, iFWidth, iFHeight;	
+
+	iWidth = @media (width)
+	   iHeight = document.documentElement.clientHeight();//parent.parent.window.innerHeight;
+	}
+
+	/*
+	if(i ==0) {
+	   iWidth = parent.window.innerWidth;
+	   iHeight = parent.window.innerHeight;
+        }
+	else if(i == 1) {
+	
+	   iWidth = parent.parent.window.innerWidth;
+	   iHeight = parent.parent.window.innerHeight;
+	}
+	else if(i == 2) {
+	   iWidth = parent.parent.parent.window.innerWidth;
+	   iHeight = parent.parent.parent.window.innerHeight;
+	}*/
+
+	if(iWidth >= 1900) {
+	        device="PersonalComputer";
+	}
+
+	else if(iWidth >= 1400 && iWidth < 1850) {
+           	device= "Laptop";
+                iFWidth = "1568";
+		iFHeight = "780";
+	}
+
+	else if(iWidth < 1400 && iWidth >= 900) {
+		device="Tablet";
+		iFWidth = "1009";
+		iFHeight = "538";
+	}
+
+	else if(iWidth < 900) {
+		device="Smartphone";
+		iFWidth = "584";
+		iFHeight = "281";
+	}
+      
+
+	if(i == 0) {
+	   document.getElementById("mainTabTd").width = iWidth -26;
+	   document.getElementById("mainTabTd").height = iHeight -26;
+	   document.getElementById("frameSet").width = iFWidth;
+	   document.getElementById("frameSet").height = iFHeight;
+	   document.getElementById("frameSet").src="html/" + device + "/e@sySoft_StartIndex.html";
+	}
+}

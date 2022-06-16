@@ -1,0 +1,35 @@
+// javascript:picture change easySoftDrawer
+function easySoftDrawer(i) {
+
+	  var bild = new Array();
+	  var imgHeight, imgWidth, PosX, PosY;
+	  var imgWQuo, imgHQuo;
+
+        proportionCalculation(2);
+
+	imgWQuo = parent.frameMiddle.innerWidth / 1040;
+	imgHQuo = parent.frameMiddle.innerHeight / 796;
+
+        imgWidth = 400 * imgWQuo;
+	imgHeight = 45 * imgHQuo;
+	
+	PosX = 530 * imgWQuo;
+     	PosY = 40  * imgHQuo;
+
+	if(parent.frameMiddleRight.document.getElementById("video1") != null) 
+		parent.frameMiddleRight.location.href="../html/backgroundFrameMiddleRight.html";
+		
+	
+	
+	  bild[i] = new Image(imgWidth, imgHeight);
+	  bild[i].src = "../img/" + device + "/programDrawer" + i + ".png";
+
+	  parent.frameMiddle.document.images[0] = bild[i];
+	  parent.frameMiddle.document.images[0].src = bild[i].src;
+	  parent.frameMiddle.document.images[0].hspace = PosX;
+	  parent.frameMiddle.document.images[0].vspace = PosY;
+
+	if(i == 0)
+	   parent.frameMiddleRight.document.images[0].src="../img/" + device + "/projectionWallApp01.png";
+
+}
